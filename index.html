@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Around Georgia</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="javascript/price.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <div class="background-video">
+        <video autoplay muted loop id="bgvideo">
+            <source src="videos/lake.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="header-wrapper">
+        <h1 id="titleh1">Cheap Travel Around Georgia</h1>
+    </div>
+    <div class="header-nav">
+
+        <div class="nav-link-wrapper">
+            <div class="nav-link about">
+                <a href="#">About us</a>
+            </div>
+            <div class="nav-link schedule">
+                <a href="#">Buy Tickets</a>
+            </div>
+            <div class="nav-link rules">
+                <a href="#">My Tickets</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="ticket-wrapper">
+        <div class="cont">
+            <div class="form price">
+                <h2>Check Direction Price</h2>
+                <label>
+                    <span>From</span>
+                    <select type="email" name="email" id="from">
+                        <option value="tbilisi">Tbilisi</option>    
+                        <option value="kutaisi">Kutaisi</option> 
+                        <option value="batumi">Batumi</option> 
+                        <option value="kobuleti">Kobuleti</option> 
+                    </select>
+                </label>
+                <label>
+                    <span>Where</span>
+                    <select type="password" name="password" id="where">
+                        <option value="tbilisi">Tbilisi</option>    
+                        <option value="kutaisi">Kutaisi</option> 
+                        <option value="batumi">Batumi</option> 
+                    </select>
+                </label>
+                <button class="submit" type="button" onclick="price()">Search</button>
+                <p id="price">Price : 0 Gel</p>
+
+                <div class="social-media">
+                    <ul>
+                        <li><img src="images/facebook.png"></li>
+                        <li><img src="images/twitter.png"></li>
+                        <li><img src="images/linkedin.png"></li>
+                        <li><img src="images/instagram.png"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sub-cont">
+                <div class="img">
+                    <div class="img-text m-up">
+                        <h2>New here?</h2>
+                        <p>Sign up and discover great amount of new opportunities!</p>
+                    </div>
+                    <div class="img-text m-in">
+                        <h2>One of us?</h2>
+                        <p>If you already has an account, just sign in. We've missed you!</p>
+                    </div>
+                    <div class="img-btn">
+                        <span class="m-up">Sign Up</span>
+                        <span class="m-in">Price</span>
+                    </div>
+                </div>
+                <div class="form sign-up">
+                    <h2>Sign Up</h2>
+                    <label>
+                        <span>Name</span>
+                        <input type="text">
+                    </label>
+                    <label>
+                        <span>Email</span>
+                        <input type="email">
+                    </label>
+                    <label>
+                        <span>Password</span>
+                        <input type="password">
+                    </label>
+                    <label>
+                        <span>Confirm Password</span>
+                        <input type="password">
+                    </label>
+                    <button type="button" class="submit">Sign Up Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="javascript/app.js"></script>
+</body>
+
+</html>
